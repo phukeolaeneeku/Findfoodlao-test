@@ -1,0 +1,124 @@
+
+.contentBody {
+    width: 60%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.boxProduct_deteils {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product_details {
+    flex: 1;
+}
+
+.product-page-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-page-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.txtContentproduct {
+    flex: 1;
+}
+
+.txt_nameP {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.money_txt {
+    font-size: 18px;
+    color: #FF5331;
+    margin-bottom: 1rem;
+}
+
+.hr {
+    margin: 1rem 0;
+}
+
+.box_comments, .box_leave_review {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.box_comments h1, .box_leave_review h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.txt_review p {
+    margin-bottom: 0.5rem;
+}
+
+.icon_start_review {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon_start_review:hover {
+    color: #FFD700;
+}
+
+.container_textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn_review {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #FF5331;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_review:hover {
+    background-color: #f44100;
+}
+
+.box_RotatingLines_review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .contentBody {
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .boxProduct_deteils {
+        flex-direction: column;
+    }
+    
+    .product-page-img {
+        margin-bottom: 1rem;
+    }
+}

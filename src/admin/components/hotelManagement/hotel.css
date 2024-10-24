@@ -1,0 +1,273 @@
+/* Table.css */
+.conainer_hotel {
+    width: 100%;
+    z-index: 999;
+    padding: 100px 20px 20px 260px;
+}
+
+.container_from {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 30px 20px 20px 20px;
+    background: #FFF;
+    box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.15);
+    border-radius: 10px;
+}
+
+.tableStyle {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.thTdStyle {
+    font-size: 16px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.buttonStyle {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.deleteButtonStyle {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.inputStyle {
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.formButtonStyle {
+    padding: 8px 12px;
+}
+
+.txtAddButton {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_addtable {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    justify-content: center;
+    padding: 6px 15px;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#icon_BiPlus {
+    font-size: 22px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .conainer_hotel {
+        width: 95%;
+        padding: 20px 10px;
+        margin-top: 1rem;
+    }
+
+    .container_from {
+        padding: 15px;
+        margin-top: 1rem;
+    }
+
+    .tableStyle {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .thTdStyle {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    .buttonStyle, .deleteButtonStyle {
+        font-size: 12px;
+        padding: 5px 10px;
+        width: auto;
+    }
+
+    .txtAddButton {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn_addtable {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .conainer_hotel {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .btn_addtable{
+        width: 100%;
+    }
+
+    .container_from {
+        padding: 10px;
+        margin-top: 1rem;
+    }
+
+    .tableStyle {
+        font-size: 12px;
+    }
+
+    .thTdStyle {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+    }
+
+    .buttonStyle, .deleteButtonStyle {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    #icon_BiPlus {
+        font-size: 16px;
+    }
+}
+@media (max-width: 431px) {
+    .conainer_hotel {
+        width: 95%;
+        margin: auto;
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+    .container_from {
+        padding: 0;
+    }
+
+    .tableStyle {
+        font-size: 12px;
+    }
+
+    .thTdStyle {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .thTdStyles{
+        display: block;
+        gap: 10px;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+    }
+
+    .buttonStyle, .deleteButtonStyle {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    #icon_BiPlus {
+        font-size: 16px;
+    }
+}
+@media (max-width: 391px) {
+    .conainer_hotel {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+    .container_from {
+        padding: 0;
+    }
+
+    .tableStyle {
+        font-size: 12px;
+    }
+
+    .thTdStyle {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+    }
+
+    .buttonStyle, .deleteButtonStyle {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    #icon_BiPlus {
+        font-size: 16px;
+    }
+}

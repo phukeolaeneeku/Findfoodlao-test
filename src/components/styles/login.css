@@ -1,0 +1,148 @@
+/* Container for the login form */
+.login {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container h4 {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Title text */
+.login-title {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Form container */
+.login-form {
+  width: 100%;
+}
+
+/* Input fields */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #ff5722;
+  outline: none;
+}
+
+/* Placeholder text */
+.login-input::placeholder {
+  color: #999;
+}
+
+/* Forgot password link */
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #ff5722;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e64a19;
+}
+
+/* Sign up link */
+.signup-link {
+  width: 100%;
+  text-align: end;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.signup-link a {
+  color: #ff5722;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #e64a19;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+
+  .login {
+    width: 95%;
+    margin-top: 7rem;
+  }
+
+  .login-container {
+    background-color: white;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+
+  .login-title {
+    margin-top: 0;
+    font-size: 1em;
+    padding: 0 1rem;
+  }
+
+  .login-input {
+    font-size: 1.2em;
+  }
+
+  .login-button {
+    font-size: 1.2em;
+  }
+
+  .forgot-password {
+    font-size: 1em;
+  }
+
+  .signup-link {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,208 @@
+/* Board */
+body {
+    background-color: #f5f5f53f;
+}
+
+
+.board {
+    padding: 2rem;
+    width: 84%;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 15%;
+    position: relative;
+}
+
+/* manage and target */
+.containerBox_board {
+    display: grid;
+    justify-content: center;
+    width: 1000px;
+    height: 500px;
+    margin-top: 5rem;
+    border-radius: 20px;
+    border: 1px solid #F8F9FA;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.50);
+}
+
+.containerBox_board h2 {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.contentBox_db {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: -5rem;
+}
+
+/* manage */
+.board .manage-target .manage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.board .manage-target .manage .menu-box {
+    display: grid;
+    width: 200px;
+    height: 204px;
+    text-align: center;
+    align-items: center;
+    margin: 0 0.2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #eee;
+
+}
+
+.board .manage-target .manage .menu-box div {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.board .manage-target .manage .menu-box .iconGad {
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.board .manage-target .manage .menu-box .gone1 {
+    background-color: #737791;
+}
+
+.board .manage-target .manage .menu-box .gone2 {
+    background-color: #FF947A;
+}
+
+.board .manage-target .manage .box_history .gone22 {
+    background-color: #7a95ffde;
+}
+
+.board .manage-target .manage .menu-box .gone3 {
+    background-color: #3CD856;
+}
+
+.board .manage-target .manage .menu-box .gone4 {
+    background-color: #BF83FF;
+}
+
+.board .manage-target .manage .one {
+    background-color: #FFE2E5;
+}
+
+.contentBox_db .menu-box .txtcol {
+    color: #4079ED;
+}
+
+.board .manage-target .manage .two {
+    background-color: #FFF4DE;
+}
+
+.board .manage-target .manage .three {
+    background-color: #DCFCE7;
+}
+
+.board .manage-target .manage .four {
+    background-color: #F3E8FF;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 1250px) {
+    .board {
+        padding: 1rem;
+        max-width: 100%;
+        margin-left: auto;
+        /* Center on large screens */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .containerBox_board {
+        width: 90%;
+        /* Reduce width */
+        height: auto;
+        /* Adjust height */
+        padding: 1rem;
+    }
+
+    .contentBox_db {
+        flex-direction: column;
+        /* Stack elements vertically */
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerBox_board {
+        padding: 1rem;
+    }
+
+    .board .manage-target .manage {
+        grid-template-columns: 1fr;
+    }
+
+    .board .manage-target .manage .menu-box {
+        height: auto;
+        min-height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerBox_board {
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .board {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contentBox_db {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .contentBox_db {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .board {
+        padding: 0.5rem;
+    }
+
+    .containerBox_board {
+        width: 95%;
+        margin-top: 7rem;
+    }
+    .containerBox_board h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+   
+    .board .manage-target .manage .menu-box {
+        display: grid;
+        width: 160px;
+        height: 204px;
+        text-align: center;
+        align-items: center;
+        margin: 0 0.2rem;
+        overflow: hidden;
+        border-radius: 12px;
+        border: 1px solid #eee;
+    
+    }
+}

@@ -1,0 +1,610 @@
+/* ตั้งค่าทั่วไป */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* ส่วนหัวของผลิตภัณฑ์ */
+#product_admin {
+    width: 100%;
+    margin: auto;
+    padding: 100px 20px 20px 250px;
+    display: flex;
+    justify-content: center;
+    /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+}
+
+.container_body_admin_product {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.productHead_content {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.htxthead {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.categoryBoxfilers {
+    display: flex;
+    gap: 10px;
+}
+
+.box_add_products {
+    display: flex;
+    align-items: center;
+    padding: 6px 15px;
+    background-color: #15c65c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.box_add_products:hover {
+    background-color: #15c65c;
+}
+
+#icon_add_product {
+    margin-right: 5px;
+}
+
+/* แบนเนอร์ */
+.banner_no_box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner_no_box_image {
+    object-fit: cover;
+    overflow: hidden;
+    height: 60vh;
+}
+
+.banner_no_box_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.edit_image_banner {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 5px 5px 0 5px;
+    font-size: 20px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+#box_icon_camera {
+    color: #f46738;
+}
+
+/* หมวดหมู่ */
+.box_category {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px 0 30px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.box_category::-webkit-scrollbar {
+    display: none;
+}
+
+.box_contact_category {
+    flex: 0 0 150px;
+    max-width: 150px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.box_contact_category .img {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.box_contact_category .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deleteBox_productconotents {
+    position: absolute;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 2px 2px 0 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.ChooseImage_category {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 2px 2px 0 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#AiOutlineDelete {
+    color: #FFF;
+}
+
+
+.box_icon_MdOutlineEdit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box_icon_MdOutlineEdit div:first-child {
+    font-weight: bold;
+}
+
+.box_MdOutlineEdit {
+    cursor: pointer;
+}
+
+#icon_edit_MdOutlineEdit,
+#iconCamera_category,
+.deleteBox_productconotents svg {
+    font-size: 18px;
+    color: #FFF;
+}
+
+#icon_edit_MdOutlineEdit,
+#iconCamera_category {
+    font-size: 18px;
+    color: #f46738;
+}
+
+/* รายการผลิตภัณฑ์ */
+.contentImageProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box_product {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box_input-product_img {
+    position: relative;
+}
+
+.box_product_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box_product_image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box_product_image input {
+    display: none;
+}
+
+.Box_delete_product {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    text-align: start;
+    background-color: red;
+    font-size: 20px;
+    color: #FFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.edit_image_product {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 4px 4px 0 4px;
+    font-size: 20px;
+    margin: 3px;
+}
+
+#box_icon_camera_product {
+    color: #f46738;
+    cursor: pointer;
+}
+
+.Txt_Description {
+    width: 95%;
+}
+
+.txtOFproduct {
+    padding: 10px;
+}
+
+.txtOFproduct .box_icon_MdOutlineEdit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.txtOFproduct li {
+    list-style-type: none;
+}
+
+#icon_edit {
+    font-size: 20px;
+    cursor: pointer;
+    color: #f46738;
+}
+
+
+/* Popup Category */
+.background_addproductpopup_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000036;
+    z-index: 999;
+}
+
+.background_addproductpopup_boxs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000006;
+    z-index: 999;
+}
+
+.product_category_filter {
+    width: 350px;
+    height: 2.4rem;
+    font-size: 15px;
+    padding: 0 5px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+
+}
+
+#icon_MdCloses {
+    font-size: 18px;
+}
+
+.Box_setOrnnot {
+    padding: 5px 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+}
+
+.imageBox img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
+    border-radius: 7px;
+
+}
+
+.hover_addproductpopup_box {
+    width: 30%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 22vh;
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box_input p {
+    font-size: 18px;
+}
+
+.box_input input {
+    width: 80%;
+    height: 58px;
+    border-radius: 10px;
+}
+
+.box_icon_camera_product {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 5px 5px 0 5px;
+    font-size: 25px;
+    margin: 3px;
+}
+
+.box_icon_camera {
+    cursor: pointer;
+    position: relative;
+}
+
+.input_of_txtAddproduct {
+    width: 80%;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #DDDCE1;
+}
+
+.box_choose_image {
+    position: absolute;
+    color: white;
+    top: 23.5%;
+    left: 29.5%;
+    padding: 5.1rem 3.8rem;
+    background-color: #00000010;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.box_input_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box_input_image input {
+    width: 80%;
+    border-radius: 7px;
+    display: none;
+}
+
+.box_input_image img {
+    width: 215px;
+    height: 185px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+.box_input_image p {
+    font-size: 18px;
+}
+
+.hover_addproductpopup_box_image {
+    width: 35%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_cancel {
+    background-color: #F2F3F7;
+    color: #000;
+    font-size: 18px;
+}
+
+.btn_confirm {
+    background-color: #347FFF;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.btn_cancel:hover {
+    background-color: #e7e8ee;
+}
+
+.btn_confirm:hover {
+    background-color: #3076f0;
+}
+
+
+
+/* การตอบสนอง */
+@media (max-width: 768px) {
+    .banner_no_box_image {
+        width: 100%;
+        height: auto;
+    }
+
+    #product_admin {
+        padding: 100px 10px 20px 10px;
+    }
+
+    .productHead_content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categoryBoxfilers {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .contentImageProducts {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .box_category {
+        justify-content: flex-start;
+        gap: 5px;
+        padding: 15px 0 20px;
+    }
+
+    .box_contact_category {
+        flex: 0 0 250px;
+        max-width: 100px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .box_contact_category .img {
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .box_add_products {
+        width: 100%;
+        padding: 4px 4px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    .edit_image_banner {
+        top: 1px;
+        right: 1px;
+        border-radius: 3px;
+        padding: 2px 2px 0 2px;
+        font-size: 15px;
+    }
+
+    .hover_addproductpopup_box_image {
+        width: 95%;
+    }
+
+    .box_choose_image {
+        position: absolute;
+        color: white;
+        top: 28%;
+        left: 20%;
+        padding: 5.1rem 3.8rem;
+        background-color: #00000010;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 431px) {
+    .box_category {
+        width: 100%;
+        display: flex;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr 1fr 1fr 1fr));
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_add_products {
+        width: 100%;
+        padding: 2px 15px;
+    }
+
+    .banner_no_box_image img {
+        height: 150px;
+        border-radius: 3px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .background_addproductpopup_box {
+        width: 100%;
+    }
+
+    .hover_addproductpopup_box {
+        width: 93%;
+    }
+
+}
+
+@media (max-width: 391px) {
+
+    .box_add_products {
+        width: 100%;
+        padding: 1px 4px;
+    }
+
+    .banner_no_box_image img {
+        border-radius: 3px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+}

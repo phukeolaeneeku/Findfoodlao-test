@@ -1,0 +1,134 @@
+.bill {
+  max-width: 900px;
+  margin: 80px auto 7rem;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.billContainer {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.billTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.billTable th,
+.billTable td {
+  padding: 10px;
+  text-align: left;
+  border: none;
+}
+.billTable td {
+  padding: 10px;
+  text-align: left;
+}
+
+.billTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.additionalInfo {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 1rem;
+}
+.container_total{
+  color: #555;
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.total .container_total {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.paymentInfo {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.paymentInfo p {
+  margin: 5px 0;
+}
+
+.pending {
+  color: #f39c12;
+  font-weight: bold;
+}
+.Delivered_review{
+  padding: 2px 10px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #FF4F16;
+}
+.Delivered_review:hover{
+  background-color: #f44207;
+  box-shadow: rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* Add responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+  .billTable {
+    font-size: 14px;
+  }
+
+  .billTable th,
+  .billTable td {
+    padding: 8px 5px;
+  }
+
+  .total {
+    font-size: 16px;
+  }
+
+  .paymentInfo {
+    padding: 10px;
+  }
+
+  /* Loading styles */
+  .loading {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    color: #555;
+  }
+  
+}
+
+/* Loading styles */
+.loading {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: #555;
+}

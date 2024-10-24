@@ -1,0 +1,73 @@
+.container_from_hotel {
+    width: 90%;
+    z-index: 999;
+    margin: auto;
+    padding: 140px 20px 20px 20px;
+}
+
+@media (min-width: 768px) {
+    .container_from_hotel {
+        padding-left: 250px;
+    }
+}
+
+.container_from {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.15);
+    border-radius: 10px;
+}
+
+.container_from h4 {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.inputStyle {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.BoxSubmit {
+    background-color: #FF4F16;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.BoxSubmit:hover {
+    background-color: #f04b14;
+}
+
+@media (max-width: 767px) {
+    .container_from_hotel {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .container_from {
+        padding: 15px;
+    }
+
+    .container_from h4 {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .inputStyle, .BoxSubmit {
+        font-size: 14px;
+    }
+}

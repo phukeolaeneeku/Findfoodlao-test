@@ -1,0 +1,185 @@
+.container_body_adminuser {
+    max-width: 1200px;
+    margin: auto;
+    padding: 130px 20px 20px 200px;
+}
+
+.container_box_adminusers {
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.box_users h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.box_users_user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.box_dp_txtandiamge {
+    display: flex;
+    align-items: center;
+}
+
+.box_user_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.box_user_text p {
+    margin: 0;
+}
+
+.box_user_text p:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.box_user_text p:last-child {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.btn_box_Cont {
+    display: flex;
+    gap: 10px;
+}
+
+.delete_storeDetails,
+.viewMore_storeDetails {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.delete_storeDetails {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.viewMore_storeDetails {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.box_container_next_resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+}
+
+.box_prev_right_resume,
+.box_num_resume button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #27a7ef;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.box_prev_left_resume,
+.box_num_resume button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #f44336;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.box_num_resume button {
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 3px;
+}
+
+.num_admin_resume {
+    width: 50px;
+    height: 35px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .num_admin_resume.active {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+  }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container_body_adminuser {
+        padding: 70px 10px 20px 10px;
+    }
+
+    .box_users_user {
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .btn_box_Cont {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container_box_adminusers{
+        margin-top: 3rem;
+    }
+    .box_user_img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .delete_storeDetails,
+    .viewMore_storeDetails {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .box_prev_right_resume,
+    .box_num_resume button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .box_prev_left_resume,
+    .box_num_resume button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

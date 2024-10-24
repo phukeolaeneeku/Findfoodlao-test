@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.content {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.content .searchbar {
+    width: 550px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff4f16;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.88);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.searchbar label {
+    margin-top: 8px;
+    margin-right: 5px;
+    color: #666;
+}
+
+.searchbar input {
+    border: none;
+    background: rgba(245, 245, 245, 0.88);
+    outline: none;
+    font-size: 0.9rem;
+    width: 500px;
+    height: 40px;
+}
+
+nav ul li a svg {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+#icon_BiLogIn {
+    font-size: 22px;
+}
+
+.Box_Icon_Login {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#icon_FaCartShopping {
+    display: flex;
+}
+
+.btnmap {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.maps {
+    position: fixed;
+    width: 80%;
+    height: 48vh;
+    z-index: 1;
+    top: 35%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+  }
+
+@media (max-width: 768px) {
+    .header {
+        height: 65px;
+    }
+
+    .content {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .searchbar {
+        width: 450px;
+        height: 40px;
+        border-radius: 18px;
+    }
+
+    .Box_Icon_Login {
+        width: 70px;
+        gap: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav {
+        order: 3;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .searchbar {
+        order: 2;
+        width: 100%;
+        max-width: 100px;
+        margin: 10px auto;
+    }
+
+    .searchbar input {
+        width: 90%;
+        height: 20px;
+    }
+
+    #icon_FaCartShopping {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a span {
+        display: none;
+    }
+
+    nav ul li a svg {
+        font-size: 1.5rem;
+    }
+
+    .searchbar {
+        max-width: 80%;
+        height: 20px;
+    }
+
+    .menu-left {
+        display: none;
+    }
+}

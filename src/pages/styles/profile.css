@@ -1,0 +1,224 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --orange: #ff471a;
+    --gray: #ccc;
+    --black: #000;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.more-page {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+.more-page h3 {
+    text-align: center;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+}
+
+.left-box {
+    display: flex;
+    align-items: center;
+}
+
+.left-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 1rem;
+    color: #555;
+}
+
+.more-menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 1rem 0;
+}
+
+.menu_icon {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    padding: 20px 0;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+#icon_more {
+    width: 50px;
+    height: 25px;
+    color: #5a5858dd;
+}
+
+.menu_icon:hover #icon_more {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+.menu_icon:hover .txtPP {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+
+/* ============ popup logout ===========*/
+.background_addproductpopup_logoutAndDelete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000036;
+    z-index: 999;
+}
+
+.hover_addproductpopup_logoutAndDelete {
+    width: 30%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box_logout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 15vh;
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box_logout p {
+    font-size: 18px;
+    color: #000;
+}
+
+.btn_cancel {
+    background-color: #F2F3F7;
+    color: #000;
+    font-size: 18px;
+}
+
+.btn_confirm {
+    background-color: #347FFF;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.btn_cancel:hover {
+    background-color: #e7e8ee;
+}
+
+.btn_confirm:hover {
+    background-color: #3076f0;
+}
+
+.btn_addproducttxt_popup {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 20px;
+
+}
+
+.input_of_txtAddproduct {
+    width: 80%;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #DDDCE1;
+}
+
+.btn_foasdf {
+    display: flex;
+}
+
+/*============== Responsive =====================*/
+@media (max-width: 768px) {
+    h3{
+        text-align: center;
+    }
+    .MorePage {
+        width: 100%;
+        padding: 0;
+    }
+
+    .left_box img {
+        width: 16%;
+    }
+    .background_addproductpopup_logoutAndDelete{
+        width: 100%;
+    }
+
+    .confirmation-popup {
+        width: 80%;
+        height: 15%;
+        top: 50%;
+        left: 50%;
+    }
+    .hover_addproductpopup_logoutAndDelete{
+        width: 100%;
+    }
+    .box_logout{
+        width: 100%;
+        display: none;
+    }
+    .profile-box{
+        width: 100%;
+        padding: 0;
+        /* background-color: #1e90ff; */
+    }
+
+}
+@media screen and (max-width: 431px) {
+    .profile-box{
+        width: 100%;
+    }
+    .hover_addproductpopup_logoutAndDelete{
+        width: 90%;
+    }
+    .box_logout{
+        width: 100%;
+    }
+    .left-box img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .divider {
+        border: none;
+        height: 1px;
+        background-color: #e0e0e0;
+        margin: 0.5rem 0;
+    }
+}

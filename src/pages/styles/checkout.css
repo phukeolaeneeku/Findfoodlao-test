@@ -1,0 +1,222 @@
+.checkout-container {
+  max-width: 800px;
+  margin: 5rem auto 7rem;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container .checkout-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.checkout-container .product-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.checkout-container .product-image {
+  width: 180px;
+  height: 155px;
+  object-fit: cover;
+}
+
+.checkout-container .product-details {
+  flex: 1;
+  /* padding: 20px 20px 0 20px; */
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.checkout_detail{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.txt_Checkout{
+  text-align: start;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.checkout_price {
+  text-align: start;
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.checkout-container .product-name {
+  margin: 0 0 15px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.checkout-container .product-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.checkout-container .product-price, .product-quantity {
+  font-weight: bold;
+  color: #555;
+}
+
+.checkout-container .product-description {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.checkout-container .additional-request {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.checkout-container .order-details {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.checkout-container .address-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-container .address-note {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.checkout-container .currency-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-container .delivery-note, .total-price {
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.checkout-container .order-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-container.order-button:hover {
+  background-color: #e64a19;
+}
+
+.box_transfer_p_line {
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.boxaccount_number {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+
+.boxaccount_number_p {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+.iconnn_copy_account {
+  cursor: pointer;
+  font-size: 23px;
+}
+
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    width: 95%;
+    margin-top: 5rem;
+    padding: 10px;
+  }
+
+  .checkout-container .product-item {
+    flex-direction: column;
+  }
+
+  .checkout-container .product-image {
+    width: 95%;
+    height: 260px;
+    margin: auto;
+  }
+
+  .checkout-container .product-details {
+    padding: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .checkout-container .product-info {
+    flex-direction: column;
+  }
+
+  .checkout-container .product-price, .product-quantity {
+    margin-bottom: 5px;
+  }
+
+  .checkout-container .order-details {
+    padding: 15px;
+  }
+
+  .checkout-container .order-button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .checkout-container .checkout-title {
+    font-size: 1.5em;
+  }
+
+  .checkout-container .product-name {
+    font-size: 1.1em;
+  }
+
+  .checkout-container .additional-request {
+    height: 40px;
+  }
+}

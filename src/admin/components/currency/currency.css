@@ -1,0 +1,113 @@
+.container_currency {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 130px 20px 20px 400px;
+
+
+}
+
+.box_currency {
+    width: 70%;
+    background: #FFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.box_currency_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input_number {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.box_select {
+    display: flex;
+    align-items: center;
+}
+
+.span {
+    padding: 0 10px;
+}
+
+.container_toCurrency_toCurrencyKIP {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .container_currency {
+        padding: 130px 20px 20px 20px;
+    }
+
+    .box_currency {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_currency {
+        padding: 100px 10px 20px;
+    }
+
+    .box_currency {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .box_currency_input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .input_number {
+        width: 100%;
+    }
+
+    .box_select {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .container_currency {
+        width: 95%;
+        padding: 0;
+        margin-top: 7rem;
+    }
+
+    .box_currency {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .box_currency_input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .container_toCurrency_toCurrencyKIP {
+        width: 100%;
+    }
+}
